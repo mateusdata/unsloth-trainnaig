@@ -1,5 +1,5 @@
 [project]
-name = "ia"
+name = "unsloth-trainnaig"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -7,16 +7,11 @@ requires-python = ">=3.12"
 dependencies = [
     "accelerate>=1.13.0",
     "bitsandbytes>=0.49.2",
-    "datasets>=1.1.1",
+    "datasets>=4.3.0",
     "peft>=0.18.1",
-    "torch>=2.5.1",
-    "torchaudio>=2.5.1",
-    "torchvision>=0.20.1",
-    "transformers>=5.5.4",
-    "trl>=0.10.1",
-    "unsloth>=2024.8",
-    "xformers>=0.0.29.post1",
+    "torch>=2.11.0",
+    "torchaudio>=2.11.0",
+    "torchvision>=0.26.0",
+    "trl>=0.24.0",
+    "unsloth>=2026.3.11",
 ]
-
-[[tool.uv.index]]
-url = "https://download.pytorch.org/whl/cu121"
