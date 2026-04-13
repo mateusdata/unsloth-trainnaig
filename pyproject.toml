@@ -4,4 +4,16 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "datasets>=1.1.1",
+    "peft>=0.18.1",
+    "torch>=2.5.1",
+    "torchaudio>=2.5.1",
+    "torchvision>=0.20.1",
+    "transformers>=5.5.4",
+    "trl>=0.10.1",
+    "unsloth>=2024.8",
+]
+
+[[tool.uv.index]]
+url = "https://download.pytorch.org/whl/cu121"
