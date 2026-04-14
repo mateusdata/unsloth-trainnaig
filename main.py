@@ -31,6 +31,9 @@ trainer = SFTTrainer(
         bf16=True,
         max_length=512,
         dataset_text_field="text",
+        num_train_epochs=25, #aumentei pra 20 pq o modelo é pequeno, mas se quiser pode deixar 3 ou 5 que já vai dar uma melhorada boa (dependendo do dataset)
+        
+
     ),
 )
 trainer.train()
