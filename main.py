@@ -6,8 +6,9 @@ from trl import SFTTrainer, SFTConfig
 from datasets import Dataset
 import json
 
+# se tiver uma gpu fuleira vc pode usar essa aqui unsloth/Qwen2.5-0.5B-Instruct-bnb-4bit para seu pc nao passar mal 
 model, tokenizer = FastLanguageModel.from_pretrained(
-    "unsloth/Qwen2.5-0.5B-Instruct-bnb-4bit",
+    "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
     max_seq_length=512,
     load_in_4bit=True,
 )
